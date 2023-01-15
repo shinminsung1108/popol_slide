@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'Happiness-Sans-Title';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Title.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    /* box-sizing: border-box; */
+    font-family: Happiness-Sans-Title;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.5;
+    margin: 0;
+    min-height: 100vh;
+    background-color: #1C1C1C;
+}
+
+/* 전체 ul 스타일 */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#smooth_scroll {
+    height: 100vh;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* 상단바 */
+.header_logo {
+    margin: 0;
+    font-size: 1.45em;
+}
+
+.main_nav {
+    margin-top: 5px;
+
+}
+
+.header_logo a,
+.main_nav a {
+    padding: 10px 15px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+}
+
+.main_nav a {
+    font-size: .99em;
+}
+
+.main_nav a:hover {
+    color: #718daa;
+}
+
+
+
+.header {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    background-color: transparent;
+}
+
+/* 상단바 반응형 */
+@media (min-width: 769px) {
+    .header,
+    .main_nav {
+        display: flex;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1150px;
+    }
+
+}
+
+@media (min-width: 1025px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+
+/* 메인컨텐츠 */
+.first {
+    position: relative;
+    height: 100vh;
+}
+.main_content {
+    text-align: center;
+    line-height: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main_content_text > h1 {
+    font-size: 10rem;
+}
+
+.main_content_text > h2 {
+    font-size: 2rem;
+}
+
+.main_button {
+    width: 8rem;
+    height: 2.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 0px solid transparent;
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.main_button:hover {
+    width: 8.5rem;
+    height: 3rem;
+    transition: 0.5s;
+    color: white;
+    background-color: black;
+}
+
+.main_button_youtube {
+    width: 8rem;
+    height: 2.5rem;
+    border: 0px solid transparent;
+    border-radius: 30px;
+    color: black;
+    background-color: #34495e;
+    transition: 0.5s;
+}
+
+.main_button_youtube:hover {
+    width: 8.5rem;
+    height: 3rem;
+    transition: 0.5s;
+    color: white;
+    background-color: red;
+}
+
+/* 두번째장 */
+.second {
+    background-color: #34495e;
+}
+
+.third {
+    background-color: antiquewhite;
+}
+
+.fourth {
+    background-color: orange;
+}
