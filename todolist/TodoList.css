@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Humanbumsuk';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Humanbumsuk.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: Humanbumsuk;
+}
+
+h1 {
+    font-size: 10rem
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    text-align: center;
+    border: 0px solid black;
+    height: 90vh;
+    width: 30%;
+    margin-left: 50rem;
+    box-shadow: 5px 5px 5px 5px;
+}
+
+#inputField {
+    border: 0px solid white;
+    border-bottom: 1px solid gray;
+    width: 20rem;
+    outline: none;
+    font-size: 3rem;
+}
+
+#addToDo {
+    height: 2.5rem;
+    width: 4rem;
+    background-color: #5858FA;
+    border: 0px solid white;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+#toDoList {
+    margin-top: 3rem;
+    font-size: 2rem;
+}
