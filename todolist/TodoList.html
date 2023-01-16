@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TodoList.css">
+    <title>Todolist</title>
+</head>
+<body>
+    <h1>To Do List</h1>
+    <div class="container">
+        <input id="inputField" type="text" onkeyup="enterKey()">   <!--text 입력창(할일 입력창) 만들기-->
+        <button id="addToDo" onclick="addList()"> + </button>     <!-- + 버튼 만들기 -->
+        <div id="toDoList"> </div>  <!-- id = inputField에 할일이 입력되고 + 버튼이 눌리면 할일이 나타날 공간 만들기-->
+
+    </div>
+    <script src="TodoList.js"> </script>  
+</body>
+</html>
